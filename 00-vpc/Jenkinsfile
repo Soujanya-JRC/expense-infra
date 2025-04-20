@@ -14,7 +14,7 @@ pipeline {
         choice(name: 'ACTION', choice: ['apply','destroy'], description: 'select Action')
     }
     stages {
-        stage(''Init) {
+        stage('Init') {
             steps {
                  sh """
                     cd 00-vpc
